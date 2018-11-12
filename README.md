@@ -37,11 +37,12 @@ Create a file authorized_keys in grader .ssh directory `sudo touch authorized_ke
 Create ssh key pair using `ssh-keygen`.
 Copy the .pub key generated using ssh-keygen to authorized_keys file in grader/.ssh.
 Now login as grader `ssh -i ~/.ssh/grader grader@54.245.163.212 -p 2200`
-
+```
+## Install PostgreSql
 Configure PostgreSql `sudo apt-get install postgresql`
 Created Database instance in Amazon RDS. 
 Database access is done by `'postgresql://catalog1:password@mydata.cef6edmtz6sl.us-west-2.rds.amazonaws.com:5432/itemCatalog'`
-```
+
 ## Software Installed
 Install Apache Server
 ```
