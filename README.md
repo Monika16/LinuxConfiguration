@@ -27,9 +27,10 @@ sudo ufw allow ntp
 sudo ufw enable
 
 ```
-
-Created user grader: `sudo adduser grader`
-and gave `sudo` privilages: Added file `sudo touch grader` in \etc\sudoers.d. Made rule `grader ALL=(ALL) NOPASSWD:ALL` in grader file.
+## Grader User
+```
+Created user grader: `sudo adduser grader`.
+Gave `sudo` privilages: Added file `sudo touch grader` in \etc\sudoers.d. Made rule `grader ALL=(ALL) NOPASSWD:ALL` in grader file.
 Grader user is assigned a unique key pair to access the ssh.
 Make .ssh directory in `sudo mkdir /home/grader/.ssh`.
 Create a file authorized_keys in grader .ssh directory `sudo touch authorized_keys`.
@@ -40,7 +41,7 @@ Now login as grader `ssh -i ~/.ssh/grader grader@54.245.163.212 -p 2200`
 Configure PostgreSql `sudo apt-get install postgresql`
 Created Database instance in Amazon RDS. 
 Database access is done by `'postgresql://catalog1:password@mydata.cef6edmtz6sl.us-west-2.rds.amazonaws.com:5432/itemCatalog'`
-
+```
 ## Software Installed
 Install Apache Server
 ```
@@ -105,6 +106,8 @@ from project import app as application
 application.secret_key='super_secret_key'
 
 ```
+`sudo a2ensite itemCatalog.conf`
+
 ## OAuth authentication
 In **https://console.developers.google.com** and to our project
 Add `	http://54.245.163.212.xip.io` to Authorised JavaScript origins 
