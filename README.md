@@ -123,3 +123,12 @@ CLIENT_ID = json.loads(
 oauth_flow = flow_from_clientsecrets('/var/www/itemCatalog/Catalog-App/client_secrets.json', scope='')
 
 ```
+## Third-party Resources 
+```
+1. [Creating and Working on Amazon Lightsail Instance](https://docs.aws.amazon.com/cloud9/latest/user-guide/lightsail-instances.html) 
+2. [Creating and Working on Amazon RDS for database](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_GettingStarted.CreatingConnecting.PostgreSQL.html)
+3. [Creating user and giving sudo privilages and setting Firewall]( https://classroom.udacity.com/nanodegrees/nd004/parts/ab002e9a-b26c-43a4-8460-dc4c4b11c379/modules/357367901175461/lessons/4331066009/concepts/48010894990923)
+4. [Deploying the project on Amazon Lightsail](https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps)
+5. [Editing Readme.md](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
+
+```
